@@ -1,0 +1,1 @@
+Just testing the performance of the browser vs JSDOM.

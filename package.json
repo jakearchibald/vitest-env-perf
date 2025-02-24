@@ -1,0 +1,37 @@
+{
+  "name": "vitest-env-perf",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-browser": "time vitest run --config vitest.browser.config.js ExampleComponent.browser.spec.tsx",
+    "test-jsdom": "time vitest run --config vitest.jsdom.config.js ExampleComponent.jsdom.spec.tsx",
+    "test-happydom": "time vitest run --config vitest.happydom.config.js ExampleComponent.jsdom.spec.tsx"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.0.10",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/browser": "^3.0.7",
+    "happy-dom": "^17.1.6",
+    "jsdom": "^26.0.0",
+    "playwright": "^1.50.1",
+    "prettier": "3.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7",
+    "vitest-browser-react": "^0.1.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "msw"
+    ]
+  }
+}
