@@ -69,9 +69,11 @@ export function setupTests({
         await click(
           container.querySelectorAll('input[type=radio]')[nextSelected],
         );
+
         await expect(
           container.querySelectorAll('input[type=radio]:checked'),
         ).toHaveLength(1);
+
         await expect(
           (
             container.querySelectorAll('input[type=radio]')[

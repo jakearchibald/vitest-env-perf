@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test-browser": "time vitest run --config vitest.browser.config.js ExampleComponent.browser.spec.tsx",
+    "test-browser-simple-click": "time vitest run --config vitest.browser.config.js ExampleComponent.browser-simple-click.spec.tsx",
     "test-jsdom": "time vitest run --config vitest.jsdom.config.js ExampleComponent.jsdom.spec.tsx",
+    "test-jsdom-simple-click": "time vitest run --config vitest.jsdom.config.js ExampleComponent.jsdom-simple-click.spec.tsx",
     "test-happydom": "time vitest run --config vitest.happydom.config.js ExampleComponent.jsdom.spec.tsx"
   },
   "license": "ISC",
